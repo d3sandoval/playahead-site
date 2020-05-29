@@ -3,12 +3,23 @@
 </script>
 
 <style>
+  header img {
+    max-width: 300px;
+  }
   .projects-row {
     margin-top: 1em;
   }
+
+  @media (max-width: 640px) {
+    header img {
+      max-width: 124px;
+    }
+  }
 </style>
 
-<header>Playahead Games</header>
+<header>
+  <img src="/playahead-logo-white.png" alt="Play Ahead Games Logo" />
+</header>
 <body>
   <h1>Projects</h1>
   <div class="projects-row">
