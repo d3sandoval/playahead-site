@@ -1,0 +1,12 @@
+{
+  "extends": "@snowpack/app-scripts-svelte",
+  "plugins": [
+    [
+      "@snowpack/plugin-run-script",
+      {
+        "cmd": "sass src:public --no-source-map",
+        "watch": "$1 --watch"
+      }
+    ]
+  ]
+}

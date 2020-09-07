@@ -29,7 +29,7 @@ You can upload the updated `public` folder wherever you'd like to host the treas
 
 ---
 
-To test that the production build is working locally, you can run a local `serve` using the following command:
+To test that the production build is working locally, you can run a local `sirv` using the following command:
 
 ```bash
 npm start

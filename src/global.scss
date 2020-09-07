@@ -1,0 +1,33 @@
+@import "_colors";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  overflow-y: auto;
+  background: $color-background;
+  background-size: 22em;
+  color: $color-body;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.12em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Erica One', cursive;
+}
+
+a {
+  color: $color-link;
+
+  &:hover, &:focus {
+    color: $color-link-hover;
+  }
+}
+
+@import "App";
+@import "Card";

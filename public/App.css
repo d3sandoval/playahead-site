@@ -1,0 +1,59 @@
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.left {
+  width: 40%;
+  padding-top: 4em;
+  text-align: center;
+}
+.left img {
+  width: 60%;
+}
+.left .contact {
+  width: 60%;
+  display: block;
+  margin: 0.5em auto 0.55em;
+  padding: 0.5em 0 0.55em;
+  font-size: 1.5em;
+  line-height: 1;
+  background: url("img-lg-horiz-border.png") repeat-x top right, url("img-lg-horiz-border.png") repeat-x bottom left;
+  background-size: 13em;
+}
+.left .contact a {
+  text-decoration: none;
+  color: rgba(229, 69, 44, 0.54);
+  transition: color 0.5s;
+}
+.left .contact a:hover, .left .contact a:focus {
+  color: #3f3d3a;
+}
+.left p {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.right {
+  width: 60%;
+  padding-top: 4em;
+}
+.right h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 856px) {
+  main {
+    flex-direction: column;
+  }
+  main .left, main .right {
+    width: 100%;
+  }
+  main .right {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
